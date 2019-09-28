@@ -1,0 +1,61 @@
+.main {
+  display: flex;
+}
+
+.main > .adjustment {
+  width: 600px;
+}
+
+.main > .demo {
+  width: 200px;
+  height: 200px;
+}
+
+.adjustment {
+  padding: 0 16px;
+}
+
+.input-group {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.input-group label {
+  width: 15%;
+}
+
+.adjustment .rgb-slider {
+  width: 85%;
+  position: relative;
+  -webkit-appearance: none;
+}
+
+.adjustment .rgb-slider:focus {
+  outline: 0;
+}
+
+.adjustment .rgb-slider::before {
+  content: "0";
+  top: 20px;
+  position: absolute;
+}
+
+.adjustment .rgb-slider::after {
+  content: "255";
+  top: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.adjustment .rgb-slider.red {
+  background: linear-gradient(to right, rgb(0,0,0), rgb(255,0,0));
+}
+
+.adjustment .rgb-slider.green {
+  background: linear-gradient(to right, rgb(0,0,0), rgb(0,255,0));
+}
+
+.adjustment .rgb-slider.blue {
+  background: linear-gradient(to right, rgb(0,0,0), rgb(0,0,255));
+}
+
